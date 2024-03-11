@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/box_decoration.dart';
+import 'package:hello_world/sizeBox.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -10,8 +11,8 @@ class MainPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Aplikasi Pertamaku'),
       ),
-      body: BoxyDecoration(),
-
+      //body: BoxyDecoration(),
+      body: const SizeBoxy(),
       //widget center
 
       // body: const Center(
