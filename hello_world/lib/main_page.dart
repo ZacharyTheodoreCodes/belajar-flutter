@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/box_decoration.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -9,6 +10,8 @@ class MainPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Aplikasi Pertamaku'),
       ),
+      body: BoxyDecoration(),
+
       //widget center
 
       // body: const Center(
@@ -60,15 +63,13 @@ class MainPage extends StatelessWidget {
       //           height: 100,
       //           color: Colors.yellow,
       //         ),
-            //   Container(
-            //     width: 100,
-            //     height: 100,
-            //     color: Colors.green,
-            //   )
-    //         // ],
-    //   ),
-
-    
-     );
+      //   Container(
+      //     width: 100,
+      //     height: 100,
+      //     color: Colors.green,
+      //   )
+      //         // ],
+      //   ),
+    );
   }
 }
