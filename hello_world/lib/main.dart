@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/box_decoration.dart';
 import 'package:hello_world/main_page.dart';
 
 void main() {
@@ -10,6 +11,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: MainPage());
+    //return const MaterialApp(home: MainPage());
+    return const MaterialApp(home: BoxyDecoration());
   }
 }

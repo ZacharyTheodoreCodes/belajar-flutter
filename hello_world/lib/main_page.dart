@@ -29,46 +29,46 @@ class MainPage extends StatelessWidget {
       // )
 
       //Container
-      body: Column(
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
-                margin: const EdgeInsets.symmetric(vertical: 8.0),
-                padding: const EdgeInsets.all(10.0),
-                child: Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.orange,
-                ),
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.blue,
-              )
-            ],
-          ),
-          Row(
-            children: [
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.yellow,
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.green,
-              )
-            ],
-          )
-        ],
-      ),
-    );
+      // body: Column(
+      //   children: [
+      //     Row(
+      //       crossAxisAlignment: CrossAxisAlignment.start,
+      //       children: [
+      //         Container(
+      //           width: 100,
+      //           height: 100,
+      //           color: Colors.red,
+      //           margin: const EdgeInsets.symmetric(vertical: 8.0),
+      //           padding: const EdgeInsets.all(10.0),
+      //           child: Container(
+      //             width: 100,
+      //             height: 100,
+      //             color: Colors.orange,
+      //           ),
+      //         ),
+      //         Container(
+      //           width: 100,
+      //           height: 100,
+      //           color: Colors.blue,
+      //         )
+      //       ],
+      //     ),
+      //     Row(
+      //       children: [
+      //         Container(
+      //           width: 100,
+      //           height: 100,
+      //           color: Colors.yellow,
+      //         ),
+            //   Container(
+            //     width: 100,
+            //     height: 100,
+            //     color: Colors.green,
+            //   )
+    //         // ],
+    //   ),
+
+    
+     );
   }
 }
