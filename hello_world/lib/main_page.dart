@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/box_decoration.dart';
 import 'package:hello_world/font_study.dart';
 import 'package:hello_world/sizeBox.dart';
+import 'package:hello_world/stateless_stateful_widget.dart';
 import 'package:hello_world/text_widget.dart';
 
 class MainPage extends StatelessWidget {
@@ -16,7 +17,8 @@ class MainPage extends StatelessWidget {
       //body: BoxyDecoration(),
       // body: const SizeBoxy(),
       //body: const TextWidget(),
-      body: const FontStudy(),
+      //body: const FontStudy(),
+      body: const MyWidget(),
 
       //widget center
 
