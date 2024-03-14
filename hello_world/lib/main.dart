@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/box_decoration.dart';
+
 import 'package:hello_world/main_page.dart';
 
 void main() {
