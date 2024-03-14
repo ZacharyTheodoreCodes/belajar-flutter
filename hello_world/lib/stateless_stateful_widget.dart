@@ -33,16 +33,19 @@ class _MyWidgetState extends State<MyWidget> {
                 setState(() {
                   number++;
                 });
-                log('$number');
+                print('$number');
               },
               child: const Text('Increment')),
+          const SizedBox(
+            height: 10,
+          ),
           ElevatedButton(
               onPressed: () {
                 //setState: agar dia jadi state
                 setState(() {
                   number = 0;
                 });
-                log('$number');
+                print('$number');
               },
               child: const Text('Reset'))
         ],
