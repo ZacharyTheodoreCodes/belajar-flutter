@@ -10,18 +10,21 @@ class WrapWidget extends StatelessWidget {
       height: double.infinity,
       color: Colors.grey.shade200,
       child: Wrap(
+          crossAxisAlignment: WrapCrossAlignment.center,
           alignment: WrapAlignment.center,
           //runAlignment -> alignment widget secara crossAxis
-          runAlignment: WrapAlignment.end,
+          runAlignment: WrapAlignment.start,
           spacing: 10,
           runSpacing: 20,
           children: List.generate(
               8,
               (index) => Container(
                     width: 100,
-                    height: 200,
+                    height: index % 2 == 0 ? 150 : 100,
+                    alignment: Alignment.center,
+                    color: index % 2 == 0 ? Colors.red : Colors.blue,
                     child: Text(
-                      index as String,
+                      (index + 1).toString(),
                       style: const TextStyle(fontSize: 50, color: Colors.white),
                     ),
                   ))),
