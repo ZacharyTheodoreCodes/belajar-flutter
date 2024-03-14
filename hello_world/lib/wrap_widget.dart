@@ -9,11 +9,14 @@ class WrapWidget extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       color: Colors.grey.shade200,
+      //wrap bisa jadi responsive design
       child: Wrap(
-          crossAxisAlignment: WrapCrossAlignment.center,
-          alignment: WrapAlignment.center,
+          crossAxisAlignment: WrapCrossAlignment.end,
+          alignment: WrapAlignment.start,
+          direction: Axis.horizontal,
+          verticalDirection: VerticalDirection.up,
           //runAlignment -> alignment widget secara crossAxis
-          runAlignment: WrapAlignment.start,
+          runAlignment: WrapAlignment.center,
           spacing: 10,
           runSpacing: 20,
           children: List.generate(
