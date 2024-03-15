@@ -10,13 +10,16 @@ class PaddingWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Padding(
-          padding: EdgeInsets.fromLTRB(20, 20, 10, 20),
-          child: Text('Lorem'),
+        Container(
+          color: Colors.red,
+          child: const Padding(
+            padding: EdgeInsets.fromLTRB(20, 20, 10, 20),
+            child: Text('Lorem'),
+          ),
         ),
-        Padding(
+        const Padding(
           padding: EdgeInsets.fromLTRB(20, 20, 10, 20),
           child: Text('Ipsum'),
         ),
