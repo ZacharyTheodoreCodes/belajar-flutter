@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/align_widget.dart';
 import 'package:hello_world/box_decoration.dart';
 import 'package:hello_world/font_study.dart';
+import 'package:hello_world/padding_widget.dart';
 import 'package:hello_world/sizeBox.dart';
 import 'package:hello_world/stateless_stateful_widget.dart';
 import 'package:hello_world/text_widget.dart';
@@ -22,7 +23,8 @@ class MainPage extends StatelessWidget {
       //body: const FontStudy(),
       // body: const MyWidget(),
       //body: const WrapWidget(),
-      body: const AlignWidget(),
+      //body: const AlignWidget(),
+      body: const PaddingWidget(),
 
       //widget center
 
