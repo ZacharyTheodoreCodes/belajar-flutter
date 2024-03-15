@@ -45,7 +45,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              textEditingController.text,
+              textEditingController.text.isNotEmpty
+                  ? textEditingController.text
+                  : 'Please Write Something',
               //textAlign: TextAlign.end,
               textDirection: TextDirection.ltr,
             ),
