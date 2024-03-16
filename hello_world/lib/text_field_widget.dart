@@ -42,7 +42,16 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
           const SizedBox(
             height: 20,
           ),
-          
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              textEditingController.text.isNotEmpty
+                  ? textEditingController.text
+                  : 'Please Write Something',
+              //textAlign: TextAlign.end,
+              textDirection: TextDirection.ltr,
+            ),
+          )
         ],
       ),
     );
