@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
 class InputDecorWidget extends StatefulWidget {
@@ -20,9 +20,23 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
       child: Column(
         children: [
           TextField(
-            decoration: const InputDecoration(
-                hintText: "Write Something Here",
-                hintStyle: TextStyle(fontWeight: FontWeight.w100)),
+            decoration: InputDecoration(
+                hintText:
+                    "Write Something Here Write Something Here Write Something Here",
+                hintMaxLines: 2,
+                hintStyle: TextStyle(fontWeight: FontWeight.w100),
+                labelStyle:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.w100),
+                //declare labelText gaboleh barengan sama label
+                //labelText: "Input something here",
+                label: Container(
+                  padding: EdgeInsets.all(3),
+                  color: Colors.red,
+                  child: Text('Input Something Here'),
+                ),
+                floatingLabelAlignment: FloatingLabelAlignment.center,
+                floatingLabelBehavior: FloatingLabelBehavior.auto),
+
             style: TextStyle(fontWeight: FontWeight.bold),
             textAlign: TextAlign.start,
             cursorColor: Colors.blue,
