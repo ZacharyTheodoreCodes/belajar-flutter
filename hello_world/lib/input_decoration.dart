@@ -114,7 +114,11 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
                 suffix: Container(
                   padding: EdgeInsets.all(5),
                   child: Text('Suffix'),
-                )),
+                ),
+
+                //FillColor
+                fillColor: Colors.grey.shade200,
+                filled: true),
 
             style: const TextStyle(fontWeight: FontWeight.bold),
             textAlign: TextAlign.start,
