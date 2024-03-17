@@ -12,6 +12,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
  * 
  * Icon
  * Prefix Suffix
+ * Prefix: 
  * FillColor
  * 
  * enabledborder, focusedBorder, errorBorder, focusedErrorBorder, disableBorder
@@ -89,6 +90,30 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
                   padding: const EdgeInsets.only(
                       top: 30), // Adjust the top padding as needed
                   child: Icon(MdiIcons.faceManProfile),
+                ),
+                //Prefix
+                prefixIcon: Padding(
+                  padding: const EdgeInsets.only(top: 15),
+                  child: Icon(
+                    MdiIcons.home,
+                    size: 20,
+                  ),
+                ),
+                prefixIconColor: Colors.red.shade200,
+                prefix: Container(
+                  padding: EdgeInsets.all(5),
+                  child: Text('Prefix:'),
+                ),
+
+                //Suffix
+                suffixIcon: Icon(
+                  MdiIcons.coffee,
+                  size: 20,
+                ),
+                suffixIconColor: Colors.red.shade200,
+                suffix: Container(
+                  padding: EdgeInsets.all(5),
+                  child: Text('Suffix'),
                 )),
 
             style: const TextStyle(fontWeight: FontWeight.bold),
