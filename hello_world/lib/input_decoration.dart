@@ -21,25 +21,37 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
         children: [
           TextField(
             decoration: InputDecoration(
-              hintText: "Write Something Here",
-              hintMaxLines: 2,
-              hintStyle: TextStyle(fontWeight: FontWeight.w100, fontSize: 12),
-              labelStyle:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-              //declare labelText gaboleh barengan sama label
-              //labelText: "Input something here",
+                hintText: "Write Something Here - ini hintText",
+                hintMaxLines: 2,
+                hintStyle: const TextStyle(
+                    height: 3, fontWeight: FontWeight.w100, fontSize: 12),
+                labelStyle: const TextStyle(
+                    height: 0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 12),
+                //declare labelText gaboleh barengan sama label
+                //labelText: "Input something here",
+                label: Container(
+                  transform: Matrix4.translationValues(0, 0, 0),
+                  padding: EdgeInsets.all(3),
+                  color: Colors.red[200],
+                  child: Text('Input Something Here - Ini label'),
+                ),
+                floatingLabelAlignment: FloatingLabelAlignment.center,
+                floatingLabelBehavior: FloatingLabelBehavior.auto,
+                helperText: "Ini helper text",
+                helperStyle: TextStyle(
+                    color: Colors.red.shade200, fontWeight: FontWeight.bold),
 
-              label: Container(
-                padding: EdgeInsets.all(3),
-                color: Colors.red[200],
-                child: Text('Input Something Here'),
-              ),
-              helperText: "Ini helper text",
-              helperStyle: TextStyle(
-                  color: Colors.red.shade200, fontWeight: FontWeight.bold),
-              floatingLabelAlignment: FloatingLabelAlignment.center,
-              floatingLabelBehavior: FloatingLabelBehavior.auto,
-            ),
+                //Counter - hitung berapa kata yang sudah diinput
+                counter: Container(
+                  ),
+                // counterText: '${textEditingController.text.length}/100',
+                // counterStyle: const TextStyle(
+                //     color: Colors.grey, fontWeight: FontWeight.normal)
+                
+                ),
 
             style: TextStyle(fontWeight: FontWeight.bold),
             textAlign: TextAlign.start,
