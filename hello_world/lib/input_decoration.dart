@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 /**
  * Input decor:
@@ -8,6 +9,12 @@ import 'package:flutter/services.dart';
  * label
  * counter
  * error
+ * 
+ * Icon
+ * Prefix Suffix
+ * FillColor
+ * 
+ * enabledborder, focusedBorder, errorBorder, focusedErrorBorder, disableBorder
  */
 
 class InputDecorWidget extends StatefulWidget {
@@ -54,7 +61,7 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
 
                 //Counter - hitung berapa kata yang sudah diinput
                 counter: Container(
-                  margin: const EdgeInsets.only(top: 10),
+                  margin: const EdgeInsets.only(top: 5),
                   child: Text(
                     '${textEditingController.text.length}/100',
                     style: const TextStyle(
@@ -74,9 +81,17 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
                     child: const Text(
                   'This is error text',
                   style: TextStyle(color: Colors.pink),
-                ))),
+                )),
 
-            style: TextStyle(fontWeight: FontWeight.bold),
+                //Icon
+                //Icon - nerima widget juga incl. Container
+                icon: Padding(
+                  padding: const EdgeInsets.only(
+                      top: 30), // Adjust the top padding as needed
+                  child: Icon(MdiIcons.faceManProfile),
+                )),
+
+            style: const TextStyle(fontWeight: FontWeight.bold),
             textAlign: TextAlign.start,
             cursorColor: Colors.blue,
             inputFormatters: [
