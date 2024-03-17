@@ -2,6 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
+/**
+ * Input decor:
+ * Hint
+ * label
+ * counter
+ * error
+ */
+
 class InputDecorWidget extends StatefulWidget {
   const InputDecorWidget({super.key});
 
@@ -46,12 +54,27 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
 
                 //Counter - hitung berapa kata yang sudah diinput
                 counter: Container(
+                  margin: const EdgeInsets.only(top: 10),
+                  child: Text(
+                    '${textEditingController.text.length}/100',
+                    style: const TextStyle(
+                        color: Colors.grey, fontWeight: FontWeight.normal),
                   ),
+                ),
+                //Counter property lainnya
                 // counterText: '${textEditingController.text.length}/100',
                 // counterStyle: const TextStyle(
                 //     color: Colors.grey, fontWeight: FontWeight.normal)
-                
-                ),
+
+                //errortext
+                // errorText: "This is error text",
+                // errorStyle: const TextStyle(
+                //   color: Colors.pink,
+                error: Container(
+                    child: const Text(
+                  'This is error text',
+                  style: TextStyle(color: Colors.pink),
+                ))),
 
             style: TextStyle(fontWeight: FontWeight.bold),
             textAlign: TextAlign.start,
