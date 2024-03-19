@@ -15,6 +15,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
  * Prefix: 
  * FillColor
  * 
+ * Border: gabisa barengan sama error
  * enabledborder, focusedBorder, errorBorder, focusedErrorBorder, disableBorder
  */
 
@@ -121,7 +122,12 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
               filled: true,
 
               //border
-              enabledBorder: UnderlineInputBorder(),
+              //enabledBorder: InputBorder.none,
+
+              
+              
+              
+              ),
             ),
 
             style: const TextStyle(fontWeight: FontWeight.bold),
