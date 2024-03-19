@@ -89,7 +89,7 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
                 //Icon - nerima widget juga incl. Container
                 icon: Padding(
                   padding: const EdgeInsets.only(
-                      top: 30), // Adjust the top padding as needed
+                      top: 0), // Adjust the top padding as needed
                   child: Icon(MdiIcons.faceManProfile),
                 ),
                 //Prefix
@@ -101,8 +101,7 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
                   ),
                 ),
                 prefixIconColor: Colors.red.shade200,
-                prefix:  Text('Prefix:'),
-                
+                prefix: Text('Prefix:'),
 
                 //Suffix
                 suffixIcon: Icon(
@@ -111,7 +110,7 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
                 ),
                 suffixIconColor: Colors.red.shade200,
                 suffix: Container(
-                  padding: EdgeInsets.all(5),
+                  //padding: EdgeInsets.all(5),
                   child: Text('Suffix'),
                 ),
 
@@ -123,7 +122,15 @@ class _InputDecorWidgetState extends State<InputDecorWidget> {
                 //enabledBorder: InputBorder.none,
 
                 enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.yellow.shade300))),
+                    borderSide: BorderSide(color: Colors.yellow.shade300)),
+                errorBorder: OutlineInputBorder(
+                    borderRadius: const BorderRadius.all(Radius.circular(3)),
+                    borderSide:
+                        BorderSide(color: Colors.red.shade300, width: 3))
+                /**
+                     * focusedBorder, disabledBorder (enablenya dibikin false dulu), focusedErrorBorder
+                     */
+                ),
 
             style: const TextStyle(fontWeight: FontWeight.bold),
             textAlign: TextAlign.start,
