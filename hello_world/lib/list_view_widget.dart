@@ -17,32 +17,67 @@ class ListViewWidget extends StatefulWidget {
 
 class _MyWidgetState extends State<ListViewWidget> {
   int counter = 0;
-  List<Widget> generatedTextWidgets = [];
+  List<Widget> dataKeSekian = [];
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        ElevatedButton(
-          onPressed: () {
-            setState(() {
-              counter++;
-              generatedTextWidgets.add(
-                Text(
-                  'Value: $counter',
-                  style: TextStyle(fontSize: 20),
-                ),
-              );
-            });
-          },
-          child: Text('Increment Counter'),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    dataKeSekian.add(Text('Data ke- ${counter.toString()}'));
+                    counter++;
+                    print(dataKeSekian);
+                  });
+                },
+                child: Text('tambah data')),
+            ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    if (counter != 0) {
+                      dataKeSekian.removeLast();
+                      counter--;
+                    } else {
+                      //ERROR MSSG
+                      // // Show error message if counter is already 0
+                      // showDialog(
+                      //   context: context,
+                      //   builder: (context) => AlertDialog(
+                      //     title: Text('Error'),
+                      //     content: Text('Data sudah habis'),
+                      //     actions: <Widget>[
+                      //       TextButton(
+                      //         onPressed: () {
+                      //           Navigator.of(context).pop();
+                      //         },
+                      //         child: Text('OK'),
+                      //       ),
+                      //     ],
+                      //   ),
+                      // );
+
+                      //SCAFFOLD MESSENGER
+                      // ScaffoldMessenger.of(context).showSnackBar(
+                      //   SnackBar(
+                      //     content: Text('Data sudah habis'),
+                      //   ),
+                      // );
+
+                      //simple text
+                      dataKeSekian.add(Text('Data sudah habis'));
+                    }
+                  });
+                },
+                child: Text('hapus data'))
+          ],
         ),
-        SizedBox(
-            height: 20),
         Column(
-          children: generatedTextWidgets,
-        ) // Adding some spacing between the button and the list
-       // ...generatedTextWidgets, // Using spread operator to add all widgets
+          children: dataKeSekian,
+        )
       ],
     );
   }
