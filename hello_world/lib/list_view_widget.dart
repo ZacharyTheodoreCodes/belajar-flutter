@@ -31,7 +31,11 @@ class _MyWidgetState extends State<ListViewWidget> {
                   setState(() {
                     dataKeSekian.add(Text('Data ke- ${counter.toString()}'));
                     counter++;
-                    print(dataKeSekian);
+                    if (counter > 0) {
+                      dataKeSekian.removeWhere((element) =>
+                          element is Text &&
+                          element.data == 'Data sudah habis');
+                    }
                   });
                 },
                 child: Text('tambah data')),
@@ -68,7 +72,13 @@ class _MyWidgetState extends State<ListViewWidget> {
                       // );
 
                       //simple text
-                      dataKeSekian.add(Text('Data sudah habis'));
+                      bool errorMsgExists = dataKeSekian.any((element) =>
+                          element is Text &&
+                          element.data == 'Data sudah habis');
+                      //Kalau textnya belum ada baru kita add
+                      if (!errorMsgExists) {
+                        dataKeSekian.add(Text('Data sudah habis'));
+                      }
                     }
                   });
                 },
