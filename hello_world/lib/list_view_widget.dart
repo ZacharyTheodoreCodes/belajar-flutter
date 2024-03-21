@@ -16,31 +16,33 @@ class ListViewWidget extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<ListViewWidget> {
-  int counter = 1;
-  List dataKeSekian = [];
+  int counter = 0;
+  List<Widget> generatedTextWidgets = [];
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            ElevatedButton(
-                onPressed: () {
-                  setState(() {
-                    dataKeSekian.add(Text('Data ke- ${counter.toString()}'));
-                    counter++;
-                    print(dataKeSekian);
-                  });
-                },
-                child: Text('tambah data')),
-            ElevatedButton(onPressed: null, child: Text('hapus data'))
-          ],
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              counter++;
+              generatedTextWidgets.add(
+                Text(
+                  'Value: $counter',
+                  style: TextStyle(fontSize: 20),
+                ),
+              );
+            });
+          },
+          child: Text('Increment Counter'),
         ),
+        SizedBox(
+            height: 20),
         Column(
-          children: dataKeSekian,
-        )
+          children: generatedTextWidgets,
+        ) // Adding some spacing between the button and the list
+       // ...generatedTextWidgets, // Using spread operator to add all widgets
       ],
     );
   }
