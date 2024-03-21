@@ -4,6 +4,7 @@ import 'package:hello_world/box_decoration.dart';
 import 'package:hello_world/font_study.dart';
 import 'package:hello_world/icon_widget.dart';
 import 'package:hello_world/input_decoration.dart';
+import 'package:hello_world/list_view_widget.dart';
 import 'package:hello_world/padding_widget.dart';
 import 'package:hello_world/sizeBox.dart';
 import 'package:hello_world/stateless_stateful_widget.dart';
@@ -30,8 +31,9 @@ class MainPage extends StatelessWidget {
       //body: const PaddingWidget(),
       //body: const IconWidget(),
       //body: const TextFieldWidget(),
-      body: const InputDecorWidget(),
- 
+      //body: const InputDecorWidget(),
+      body: const ListViewWidget(),
+
       //widget center
 
       // body: const Center(
