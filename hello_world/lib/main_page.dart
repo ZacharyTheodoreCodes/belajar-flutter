@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/align_widget.dart';
 import 'package:hello_world/animated_container.dart';
+import 'package:hello_world/animated_container2.dart';
 import 'package:hello_world/box_decoration.dart';
 import 'package:hello_world/font_study.dart';
 import 'package:hello_world/icon_widget.dart';
@@ -19,81 +20,82 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Aplikasi Pertamaku'),
-      ),
-      //body: BoxyDecoration(),
-      // body: const SizeBoxy(),
-      //body: const TextWidget(),
-      //body: const FontStudy(),
-      // body: const MyWidget(),
-      //body: const WrapWidget(),
-      //body: const AlignWidget(),
-      //body: const PaddingWidget(),
-      //body: const IconWidget(),
-      //body: const TextFieldWidget(),
-      //body: const InputDecorWidget(),
-      //body: const ListViewWidget(),
-      body: const animatedContainerWidget(),
+        appBar: AppBar(
+          title: const Text('Aplikasi Pertamaku'),
+        ),
+        //body: BoxyDecoration(),
+        // body: const SizeBoxy(),
+        //body: const TextWidget(),
+        //body: const FontStudy(),
+        // body: const MyWidget(),
+        //body: const WrapWidget(),
+        //body: const AlignWidget(),
+        //body: const PaddingWidget(),
+        //body: const IconWidget(),
+        //body: const TextFieldWidget(),
+        //body: const InputDecorWidget(),
+        //body: const ListViewWidget(),
+        //body: const animatedContainerWidget(),
+        body: const animatedContainer2Widget()
 
-      //widget center
+        //widget center
 
-      // body: const Center(
-      //   child: Text("Hello World!"),
-      // ),
+        // body: const Center(
+        //   child: Text("Hello World!"),
+        // ),
 
-      //Column and row
-      // body: const Column(
-      //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-      //   children: [
-      //     Text("Hello world"),
-      //     Row(
-      //       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      //       children: [Text('Hi World'), Text('Hola World')],
-      //     ),
-      //     Text("Another Hello")
-      //   ],
-      // )
+        //Column and row
+        // body: const Column(
+        //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //   children: [
+        //     Text("Hello world"),
+        //     Row(
+        //       mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //       children: [Text('Hi World'), Text('Hola World')],
+        //     ),
+        //     Text("Another Hello")
+        //   ],
+        // )
 
-      //Container
-      // body: Column(
-      //   children: [
-      //     Row(
-      //       crossAxisAlignment: CrossAxisAlignment.start,
-      //       children: [
-      //         Container(
-      //           width: 100,
-      //           height: 100,
-      //           color: Colors.red,
-      //           margin: const EdgeInsets.symmetric(vertical: 8.0),
-      //           padding: const EdgeInsets.all(10.0),
-      //           child: Container(
-      //             width: 100,
-      //             height: 100,
-      //             color: Colors.orange,
-      //           ),
-      //         ),
-      //         Container(
-      //           width: 100,
-      //           height: 100,
-      //           color: Colors.blue,
-      //         )
-      //       ],
-      //     ),
-      //     Row(
-      //       children: [
-      //         Container(
-      //           width: 100,
-      //           height: 100,
-      //           color: Colors.yellow,
-      //         ),
-      //   Container(
-      //     width: 100,
-      //     height: 100,
-      //     color: Colors.green,
-      //   )
-      //         // ],
-      //   ),
-    );
+        //Container
+        // body: Column(
+        //   children: [
+        //     Row(
+        //       crossAxisAlignment: CrossAxisAlignment.start,
+        //       children: [
+        //         Container(
+        //           width: 100,
+        //           height: 100,
+        //           color: Colors.red,
+        //           margin: const EdgeInsets.symmetric(vertical: 8.0),
+        //           padding: const EdgeInsets.all(10.0),
+        //           child: Container(
+        //             width: 100,
+        //             height: 100,
+        //             color: Colors.orange,
+        //           ),
+        //         ),
+        //         Container(
+        //           width: 100,
+        //           height: 100,
+        //           color: Colors.blue,
+        //         )
+        //       ],
+        //     ),
+        //     Row(
+        //       children: [
+        //         Container(
+        //           width: 100,
+        //           height: 100,
+        //           color: Colors.yellow,
+        //         ),
+        //   Container(
+        //     width: 100,
+        //     height: 100,
+        //     color: Colors.green,
+        //   )
+        //         // ],
+        //   ),
+        );
   }
 }
