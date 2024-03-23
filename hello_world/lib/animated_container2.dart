@@ -22,6 +22,29 @@ class _animatedContainer2WidgetState extends State<animatedContainer2Widget> {
 
   @override
   Widget build(BuildContext context) {
-    return 
+    return Center(
+      child: Column(
+        children: [
+          AnimatedContainer(
+            duration: Duration(seconds: 1),
+            width: _width,
+            height: 100.0,
+            color: Colors.blue,
+            curve: Curves.easeInOut,
+            child: const Center(
+              child: Text(
+                'Animated Container',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 20.0,
+          ),
+          ElevatedButton(
+              onPressed: _toggleWidth, child: const Text('toggle width'))
+        ],
+      ),
+    );
   }
 }
