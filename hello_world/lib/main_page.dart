@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/align_widget.dart';
+import 'package:hello_world/animated_container.dart';
 import 'package:hello_world/box_decoration.dart';
 import 'package:hello_world/font_study.dart';
 import 'package:hello_world/icon_widget.dart';
@@ -32,7 +33,8 @@ class MainPage extends StatelessWidget {
       //body: const IconWidget(),
       //body: const TextFieldWidget(),
       //body: const InputDecorWidget(),
-      body: const ListViewWidget(),
+      //body: const ListViewWidget(),
+      body: const animatedContainerWidget(),
 
       //widget center
 
