@@ -19,7 +19,7 @@ class ImageWidget extends StatelessWidget {
       //   repeat: ImageRepeat.repeat,
       // ),
       child: Image(
-        image: AssetImage("assets/sulwhasoo-blackpink-rose-5.jpeg"),
+        image: AssetImage("images/rose.jpg"),
         fit: BoxFit.contain,
         repeat: ImageRepeat.repeat,
       ),

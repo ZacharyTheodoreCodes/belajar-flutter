@@ -20,5 +20,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-assets:
-  - assets/sulwhasoo-blackpink-rose-5.jpeg
+  assets:
+    - assets/sulwhasoo-blackpink-rose-5.jpeg
+    - images/rose.jpg
