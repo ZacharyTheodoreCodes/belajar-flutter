@@ -5,6 +5,13 @@ class ImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Image(image: NetworkImage(url)));
+    return Center(
+        child: Container(
+      width: 200,
+      height: 200,
+      child: Image(
+          image: NetworkImage(
+              'https://press.tiffany.com/wp-content/uploads/02_0525_v4_QC_R600-1095x900.jpg')),
+    ));
   }
 }
