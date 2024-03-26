@@ -17,6 +17,3 @@ class MainMultiPage extends StatelessWidget {
   }
 }
 
-/**
- * hello_world/lib/navigation_multiplePage
- */
