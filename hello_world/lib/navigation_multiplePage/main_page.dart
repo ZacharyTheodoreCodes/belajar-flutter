@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/navigation_multiplePage/second_page.dart';
 
 class MainMultiPage extends StatelessWidget {
   const MainMultiPage({super.key});
@@ -10,10 +11,15 @@ class MainMultiPage extends StatelessWidget {
         title: Text('Second Page'),
       ),
       body: Center(
-        child:
-            ElevatedButton(onPressed: () {}, child: Text('Go to second page')),
+        child: ElevatedButton(
+            onPressed: () {
+              //stack method: push Replacement
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return SecondPage();
+              }));
+            },
+            child: Text('Go to second page')),
       ),
     );
   }
 }
-

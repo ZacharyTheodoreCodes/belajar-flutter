@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/navigation_multiplePage/main_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -7,10 +8,18 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Second Page'),
+        title: Text('Login Page'),
       ),
       body: Center(
-        child: ElevatedButton(onPressed: () {}, child: Text('Back')),
+        child: ElevatedButton(
+            onPressed: () {
+              //stack method: push Replacement -> gabisa return ke page login lagi 
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return MainMultiPage();
+              }));
+            },
+            child: Text('Login Here')),
       ),
     );
   }
