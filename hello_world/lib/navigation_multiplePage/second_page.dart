@@ -13,9 +13,8 @@ class SecondPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
             onPressed: () {
-              //stack method: push Replacement
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) {
+              //stack method: pop Replacement
+              Navigator.pop(context, MaterialPageRoute(builder: (context) {
                 return MainMultiPage();
               }));
             },

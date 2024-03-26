@@ -13,9 +13,8 @@ class MainMultiPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
             onPressed: () {
-              //stack method: pop
-
-              Navigator.pop(context, MaterialPageRoute(builder: (context) {
+              //stack method: PUSH
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return SecondPage();
               }));
             },
