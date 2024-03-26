@@ -5,7 +5,15 @@ class MainMultiPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('hello world');
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Second Page'),
+      ),
+      body: Center(
+        child:
+            ElevatedButton(onPressed: () {}, child: Text('Go to second page')),
+      ),
+    );
   }
 }
 
