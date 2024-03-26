@@ -8,13 +8,14 @@ class MainMultiPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Second Page'),
+        title: Text('Main Page'),
       ),
       body: Center(
         child: ElevatedButton(
             onPressed: () {
-              //stack method: push Replacement
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
+              //stack method: pop
+
+              Navigator.pop(context, MaterialPageRoute(builder: (context) {
                 return SecondPage();
               }));
             },

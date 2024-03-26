@@ -1,0 +1,5 @@
+Navigasi:
+Stack
+pushReplacement: push page baru & replace page saat ini
+pop: buang page saat ini
+push: timpa page di atas page saat ini
