@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/navigation_multiplePage/login_page.dart';
 
-import 'package:hello_world/navigation_multiplePage/main_page.dart';
 
 void main() {
   runApp(const MainApp());
